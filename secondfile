@@ -1,4 +1,6 @@
-this is second file
-need to write something for my first edition.
-A lot of expection from me by other people
-I do not know , how can I msanage them
+resource "aws_instance" "web" {
+    ami                ="ami-00cb4778834678e26e89"
+    instance_type      ="t2.micro"
+    vpc_security_group_ids ="sg-00cb4778834678e26e89","sg-00cb4778834678e26e81git status
+    "
+}
