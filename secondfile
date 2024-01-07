@@ -3,6 +3,13 @@ resource "aws_instance" "web" {
     instance_type      ="t2.micro"
     vpc_security_group_ids =["sg-00cb4778834678e26e89","sg-00cb4778834678e26e81git status"]
      iam_instance_profile  = "EC2-RO-ROLE"
-     key_name              = "devops"
-     
+     key_name              = "devops"    
+}
+
+output "PUBLIC_IP" {
+    value = aws_instance.web.public_ip
+}
+
+output "PRIVATE_IP" {
+    value = aws_instance.web.private_ip
 }
